@@ -16,7 +16,7 @@ const SearchInput = ({onSubmit}) => {
     
     return (
         <form onSubmit={handleSubmit}>
-            <input type='text' value={input} onChange={handleChange} placeholder='Github 프로필을 검색해보세요'/>
+            <input ype='text' value={input} onChange={handleChange} placeholder='Github 프로필을 검색해보세요'/>
         </form>
     )
 }
