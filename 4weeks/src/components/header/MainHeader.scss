@@ -1,0 +1,18 @@
+.main-header {
+    display: flex;
+    border: 1px solid;
+    height: 45px;
+    padding: 12px;
+    font-size: 14px;
+
+
+    &__icon {}
+
+    &__nav {
+        display: flex;
+    }
+
+    .empty {
+        flex: 1;
+    }
+}

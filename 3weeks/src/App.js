@@ -1,7 +1,7 @@
 import './App.css';
 import SearchInput from './components/SearchInput';
 import SearchResult from './components/SearchResult';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import {getUserApi} from './lib/api';
 

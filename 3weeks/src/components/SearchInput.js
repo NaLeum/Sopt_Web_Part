@@ -10,8 +10,8 @@ const SearchInput = ({onSubmit}) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-
         onSubmit(input);
+        setInput('');
     }
     
     return (
