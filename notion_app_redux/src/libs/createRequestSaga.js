@@ -20,7 +20,6 @@ export default function createRequestSage(type, request) {
         payload: response.data,
         meta: response,
       });
-      if (type === "member/GET_MEMBERLIST") yield put(memberList());
     } catch (error) {
       yield put({
         type: FAILURE,

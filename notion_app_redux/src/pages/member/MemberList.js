@@ -12,12 +12,14 @@ const MemberList=({history,match})=> {
 
     useEffect(() => {
         dispatch(getMemberList());
-    },[dispatch]);
+    },[dispatch])
     
-    const {memberListInfo,loading} = useSelector(({member,loading})=>({
-        memberListInfo : member.memberListInfo.data,
+    const {memberListInfo,loading} = useSelector(({member,loading})=>(
+        {
+        memberListInfo : member?.memberListInfo?.data,
         loading:loading['member/GET_MEMBERLIST']
     }))
+    
 
 
         return (
@@ -35,7 +37,7 @@ const MemberList=({history,match})=> {
                 </div>
                 <hr />
                 <div className="member-list-content-wrapper">
-                        {memberListInfo.map((member, i) =>
+                        {memberListInfo && memberListInfo.map((member, i) =>
                             <Card key={`member-${member.id}`} route={{ history, match }}
                                 memberData={member}  />)}
                     </div>
