@@ -66,6 +66,7 @@ function MemberDetail({ match }) {
             });
         } catch (e) {
             console.error(e);
+            // 앙대...
         }
     }
     const memberElement = () => (
